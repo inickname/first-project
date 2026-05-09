@@ -1,5 +1,4 @@
 public class HelloWorld {
-    static int a = 1;
 
     public static void main(String[] args) {
         int sum1 = sum(1001, 2000);
@@ -20,8 +19,7 @@ public class HelloWorld {
     }
 
     public static int multiply(int p, int k) {
-        int mult = p * k;
-        return mult;
+        return p * k;
     }
 
     public static int substruct(int g, int l) {
