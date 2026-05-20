@@ -15,6 +15,7 @@ public class HelloWorld {
     }
 
     public static int sum(int x, int y) {
+
         return x + y;
     }
 
@@ -23,10 +24,12 @@ public class HelloWorld {
     }
 
     public static int substruct(int g, int l) {
+
         return g - l;
     }
 
     public static double divide(int s, int h) {
+
         return (double) s / h;
     }
 }
