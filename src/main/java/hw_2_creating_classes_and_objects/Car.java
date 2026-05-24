@@ -1,4 +1,4 @@
-package creating_classes_and_objects;
+package hw_2_creating_classes_and_objects;
 
 public class Car {
     String brand;

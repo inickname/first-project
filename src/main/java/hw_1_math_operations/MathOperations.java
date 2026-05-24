@@ -1,7 +1,9 @@
+package hw_1_math_operations;
+
 public class MathOperations {
 
     public static void main(String[] args) {
-        //1. Напишите класс MathOperations
+        //1. Напишите класс hw_1_math_operations.MathOperations
         int add1 = add(2, 4);
         System.out.println("Результат сложения: " + add1);
 
@@ -66,7 +68,7 @@ public class MathOperations {
         System.out.println("Результат перевода температуры в Цельсий: " + fahrenheitToCelsius1);
     }
 
-    //1. Напишите класс MathOperations
+    //1. Напишите класс hw_1_math_operations.MathOperations
     public static int add(int x, int y) {
         return x + y;
     }
