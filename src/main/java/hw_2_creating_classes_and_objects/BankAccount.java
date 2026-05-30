@@ -29,7 +29,7 @@ public class BankAccount {
         return this.balance -= amount;
     }
 
-    void printBalance(double balance) {
-        System.out.println("Текущий баланс: " + balance);
+    void printBalance() {
+        System.out.println("Текущий баланс: " + this.balance);
     }
 }

@@ -25,7 +25,7 @@ public class Book {
         this.author = author;
     }
 
-    void printInfo(String title, String author) {
-        System.out.println("Название книги: " + title + ", автор: " + author);
+    void printInfo() {
+        System.out.println("Название книги: " + this.title + ", автор: " + this.author);
     }
 }

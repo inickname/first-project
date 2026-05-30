@@ -21,7 +21,7 @@ public class Point {
         this.x = x;
     }
 
-    void print(double x, double y) {
+    void print() {
         System.out.println("Координата x: " + this.x + ", координата y: " + this.y);
     }
 }

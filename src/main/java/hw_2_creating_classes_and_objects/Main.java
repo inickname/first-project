@@ -23,9 +23,7 @@ public class Main {
 
         book1.setAuthor("Эрих Мария Ремарк");
 
-        String title1 = book1.getTitle();
-        String author1 = book1.getAuthor();
-        book1.printInfo(title1, author1);
+        book1.printInfo();
 
         // Класс BankAccount
         BankAccount bankAccount1 = new BankAccount("Petya", 1000.0);
@@ -33,26 +31,21 @@ public class Main {
         bankAccount1.deposit(9999.9);
         bankAccount1.withdraw(1000.0);
 
-        double balance1 = bankAccount1.getBalance();
-        bankAccount1.printBalance(balance1);
+        bankAccount1.printBalance();
 
         // Класс Point
         Point point1 = new Point(37.334605, -122.009102);
 
         point1.setX(37.334606);
 
-        double x1 = point1.getX();
-        double y1 = point1.getY();
-        point1.print(x1, y1);
+        point1.print();
 
         // Класс StudentGroup
         StudentGroup studentGroup1 = new StudentGroup("A", 12);
 
         studentGroup1.setStudentCount(15);
 
-        String groupName1 = studentGroup1.getGroupName();
-        int studentCount1 = studentGroup1.getStudentCount();
-        studentGroup1.printInfo(groupName1, studentCount1);
+        studentGroup1.printInfo();
 
         // Класс Circle
         Circle circle1 = new Circle(2.0);

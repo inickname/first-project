@@ -25,7 +25,7 @@ public class StudentGroup {
         this.studentCount = studentCount;
     }
 
-    void printInfo(String groupName, int studentCount) {
+    void printInfo() {
         System.out.println("Имя группы: " + this.groupName + ", количество студентов: " + this.studentCount);
     }
 }
