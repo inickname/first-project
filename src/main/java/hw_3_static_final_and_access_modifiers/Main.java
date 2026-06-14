@@ -14,6 +14,13 @@ public class Main {
         // company1.EMPLOYEE_ID = 33;
 
         // Класс MathConstants
+        MathConstants.calculateCircleArea(2);
+        MathConstants.calculateCircumference(2);
+
+        MathConstants.calculateCircleArea(3);
+        MathConstants.calculateCircumference(3);
+
+        // Класс Library
 
     }
 }
