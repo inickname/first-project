@@ -2,11 +2,11 @@ package hw_3_static_final_and_access_modifiers;
 
 public class Company {
     static String companyName = "Apple";
-    final int employeeID;
+    final int EMPLOYEE_ID;
     String employeeName;
 
     Company(int employeeID, String employeeName) {
-        this.employeeID = employeeID;
+        this.EMPLOYEE_ID = employeeID;
         this.employeeName = employeeName;
     }
 

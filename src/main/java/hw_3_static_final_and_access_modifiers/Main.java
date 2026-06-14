@@ -11,7 +11,7 @@ public class Main {
         company1.printCompanyName();
         company2.printCompanyName();
 
-        // company1.employeeID = 33;
+        // company1.EMPLOYEE_ID = 33;
 
         // Класс MathConstants
 
