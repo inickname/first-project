@@ -22,5 +22,18 @@ public class Main {
 
         // Класс Library
 
+        // Класс University
+        University university1 = new University(1, "Петя");
+        University university2 = new University(2, "Коля");
+        University university3 = new University(3, "Ваня");
+
+        University.universityName = "МГУ";
+
+        university1.printStudentInfo();
+        university2.printStudentInfo();
+        university3.printStudentInfo();
+
+        // Класс GameSettings
+
     }
 }
