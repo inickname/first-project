@@ -34,6 +34,15 @@ public class Main {
         university3.printStudentInfo();
 
         // Класс GameSettings
+        GameSettings gameSettings1 = new GameSettings("Футбол", 10);
+        GameSettings gameSettings2 = new GameSettings("Баскетбол", 9);
 
+        GameSettings.setMaxPlayers(12);
+
+        gameSettings1.addPlayer();
+        gameSettings2.addPlayer();
+
+        gameSettings1.printGameStatus();
+        gameSettings2.printGameStatus();
     }
 }

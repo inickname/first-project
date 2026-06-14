@@ -2,11 +2,11 @@ package hw_3_static_final_and_access_modifiers;
 
 public class University {
     static String universityName = "МФТИ";
-    final int studentID;
+    final int STUDENT_ID;
     String studentName;
 
     University(int studentID, String studentName) {
-        this.studentID = studentID;
+        this.STUDENT_ID = studentID;
         this.studentName = studentName;
     }
 
@@ -19,6 +19,6 @@ public class University {
     }
 
     void printStudentInfo() {
-        System.out.println("Имя: " + studentName + ", ID: " + studentID + ", университет: " + universityName);
+        System.out.println("Имя: " + studentName + ", ID: " + STUDENT_ID + ", университет: " + universityName);
     }
 }
