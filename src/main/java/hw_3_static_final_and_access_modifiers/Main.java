@@ -44,5 +44,14 @@ public class Main {
 
         gameSettings1.printGameStatus();
         gameSettings2.printGameStatus();
+
+        // Класс Person
+        Person person1 = new Person("Ваня", "Иванов", "123-45-6789");
+        Person person2 = new Person("Петя", "Петров", "456-78-9123");
+
+        person1.setFirstName("Коля");
+
+        person1.printPersonInfo();
+        person2.printPersonInfo();
     }
 }
