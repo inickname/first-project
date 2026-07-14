@@ -8,7 +8,10 @@ public class IfElseTaskSolver {
         // System.out.println(determiningSignOfNumber());
 
         // 2. Поиск наибольшего из двух чисел
-        System.out.println(checkMax());
+        // System.out.println(checkMax());
+
+        // 3. Вывод оценки по шкале 1–5
+        System.out.println(printMark());
     }
 
     // 1. Определение знака числа
@@ -38,5 +41,25 @@ public class IfElseTaskSolver {
         int num2 = scanner.nextInt();
 
         return Math.max(num1, num2);
+    }
+
+    // 3. Вывод оценки по шкале 1–5
+    public static String printMark() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите оценку: ");
+        int mark = scanner.nextInt();
+        String result = "Программа принимает число от 1 до 5";
+
+        if (mark == 5) {
+            result = "Отлично";
+        } else if (mark == 4) {
+            result = "Хорошо";
+        } else if (mark == 3) {
+            result = "Удовлетворительно";
+        } else if (mark == 2 || mark == 1) {
+            result = "Неудовлетворительно";
+        }
+        return result;
     }
 }
