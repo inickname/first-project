@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class IfElseTaskSolver {
     public static void main(String[] args) {
         // 1. Определение знака числа
-        System.out.println(determiningSignOfNumber());
+        // System.out.println(determiningSignOfNumber());
+
+        // 2. Поиск наибольшего из двух чисел
+        System.out.println(checkMax());
     }
 
     // 1. Определение знака числа
@@ -23,5 +26,17 @@ public class IfElseTaskSolver {
         }
 
         return result;
+    }
+
+    // 2. Поиск наибольшего из двух чисел
+    public static int checkMax() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите первое число: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Введите второе число: ");
+        int num2 = scanner.nextInt();
+
+        return Math.max(num1, num2);
     }
 }
