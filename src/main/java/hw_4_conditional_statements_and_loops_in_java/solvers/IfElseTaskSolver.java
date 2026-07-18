@@ -11,7 +11,11 @@ public class IfElseTaskSolver {
         // System.out.println(checkMax());
 
         // 3. Вывод оценки по шкале 1–5
-        System.out.println(printMark());
+        // System.out.println(printMark());
+
+        // 4. Проверка на чётность
+        System.out.println(checkParity());
+
     }
 
     // 1. Определение знака числа
@@ -60,6 +64,21 @@ public class IfElseTaskSolver {
         } else if (mark == 2 || mark == 1) {
             result = "Неудовлетворительно";
         }
+        return result;
+    }
+
+    // 4. Проверка на чётность
+    public static String checkParity() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int number = scanner.nextInt();
+        String result = "Нечетное";
+
+        if (number % 2 == 0) {
+            result = "Четное";
+        }
+
         return result;
     }
 }
