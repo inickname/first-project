@@ -14,8 +14,13 @@ public class IfElseTaskSolver {
         // System.out.println(printMark());
 
         // 4. Проверка на чётность
-        System.out.println(checkParity());
+        // System.out.println(checkParity());
 
+        // 5. Определение размера скидки по возрасту
+        // System.out.println(checkSale());
+
+        // 6. Оценка результата теста по баллам
+        System.out.println(checkMark());
     }
 
     // 1. Определение знака числа
@@ -77,6 +82,44 @@ public class IfElseTaskSolver {
 
         if (number % 2 == 0) {
             result = "Четное";
+        }
+
+        return result;
+    }
+
+    // 5. Определение размера скидки по возрасту
+    public static String checkSale() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите возраст: ");
+        int age = scanner.nextInt();
+        String sale = "Без скидки";
+
+        if (age < 18) {
+            sale = "25%";
+        } else if (age >= 65) {
+            sale = "30%";
+        }
+
+        return sale;
+    }
+
+    // 6. Оценка результата теста по баллам
+    public static String checkMark() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите оценку: ");
+        int mark = scanner.nextInt();
+        String result = "Ошибка";
+
+        if (mark >= 90 && mark <= 100) {
+            result = "Отлично";
+        } else if (mark >= 75 && mark <= 89) {
+            result = "Хорошо";
+        } else if (mark >= 60 && mark <= 74) {
+            result = "Удовлетворительно";
+        } else if (mark < 60 && mark >= 0) {
+            result = "Неудовлетворительно";
         }
 
         return result;
