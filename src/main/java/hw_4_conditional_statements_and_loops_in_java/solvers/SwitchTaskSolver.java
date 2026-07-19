@@ -17,6 +17,7 @@ public class SwitchTaskSolver {
         // System.out.println(processingTextCommands());
 
         // 5. Простой калькулятор с использованием switch
+        System.out.println(calculate());
     }
 
     // 1. Вывод дня недели по номеру
@@ -138,5 +139,38 @@ public class SwitchTaskSolver {
     }
 
     // 5. Простой калькулятор с использованием switch
+    public static double calculate() {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Введите первое число: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Введите второе число: ");
+        int num2 = scanner.nextInt();
+        System.out.print("Введите оператор: ");
+        String operator = scanner.next();
+        double result = 0;
+
+        switch (operator) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                if (num2 == 0) {
+                    System.out.println("Делить на ноль нельзя");
+                    return result;
+                }
+                result = (double) num1 / num2;
+                break;
+            default:
+                System.out.println("Ошибка ввода значений");
+        }
+
+        return result;
+    }
 }
