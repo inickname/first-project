@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class WhileTaskSolver {
     public static void main(String[] args) {
         // 1. Вычисление факториала с помощью while
-        System.out.println(calculateFactorial());
+        // System.out.println(calculateFactorial());
+
+        // 2. Вывод всех чётных чисел до заданного
+        printAllEvenNumbers();
     }
 
     // 1. Вычисление факториала с помощью while
@@ -23,5 +26,19 @@ public class WhileTaskSolver {
         }
 
         return result;
+    }
+
+    // 2. Вывод всех чётных чисел до заданного
+    public static void printAllEvenNumbers() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int n = scanner.nextInt();
+        int i = 1;
+
+        while (i <= n) {
+            if (i % 2 == 0) System.out.println(i);
+            i++;
+        }
     }
 }
