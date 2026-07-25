@@ -8,7 +8,10 @@ public class WhileTaskSolver {
         // System.out.println(calculateFactorial());
 
         // 2. Вывод всех чётных чисел до заданного
-        printAllEvenNumbers();
+        // printAllEvenNumbers();
+
+        // 3. Обратный отсчёт от введённого числа до 1
+        countdown();
     }
 
     // 1. Вычисление факториала с помощью while
@@ -39,6 +42,19 @@ public class WhileTaskSolver {
         while (i <= n) {
             if (i % 2 == 0) System.out.println(i);
             i++;
+        }
+    }
+
+    // 3. Обратный отсчёт от введённого числа до 1
+    public static void countdown() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int number = scanner.nextInt();
+
+        while (number > 0) {
+            System.out.println(number);
+            number--;
         }
     }
 }
