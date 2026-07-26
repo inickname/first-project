@@ -11,7 +11,13 @@ public class DoWhileTaskSolver {
         // checkPassword();
 
         // 3. Вывод чисел от 1 до 10 с использованием do-while
+        // printNumbersFrom1To10();
 
+        // 4. Завершение программы по команде "exit"
+        // checkCommand();
+
+        // 5. Подсчёт количества цифр в числе
+        System.out.println(countDigitsInNumber());
     }
 
     // 1. Запрос положительного числа
@@ -38,5 +44,40 @@ public class DoWhileTaskSolver {
     }
 
     // 3. Вывод чисел от 1 до 10 с использованием do-while
+    public static void printNumbersFrom1To10() {
+        int i = 1;
 
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= 10);
+    }
+
+    // 4. Завершение программы по команде "exit"
+    public static void checkCommand() {
+        Scanner scanner = new Scanner(System.in);
+        String correctCommand = "exit";
+        String input;
+
+        do {
+            System.out.print("Введите команду: ");
+            input = scanner.next();
+        } while (!input.equals(correctCommand));
+    }
+
+    // 5. Подсчёт количества цифр в числе
+    public static int countDigitsInNumber() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        int number = scanner.nextInt();
+        int count = 0;
+
+        do {
+            number /= 10;
+            count++;
+        } while (number != 0);
+
+        return count;
+    }
 }
