@@ -5,7 +5,13 @@ import java.util.Scanner;
 public class DoWhileTaskSolver {
     public static void main(String[] args) {
         // 1. Запрос положительного числа
-        guessNumber();
+        // guessNumber();
+
+        // 2. Проверка пароля
+        // checkPassword();
+
+        // 3. Вывод чисел от 1 до 10 с использованием do-while
+
     }
 
     // 1. Запрос положительного числа
@@ -18,4 +24,19 @@ public class DoWhileTaskSolver {
             number = scanner.nextInt();
         } while (number <= 0);
     }
+
+    // 2. Проверка пароля
+    public static void checkPassword() {
+        Scanner scanner = new Scanner(System.in);
+        String correctPassword = "1234";
+        String input;
+
+        do {
+            System.out.print("Введите пароль: ");
+            input = scanner.next();
+        } while (!input.equals(correctPassword));
+    }
+
+    // 3. Вывод чисел от 1 до 10 с использованием do-while
+
 }
