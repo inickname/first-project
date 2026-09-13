@@ -7,10 +7,10 @@ public class Main {
 
         Zoo zoo = new Zoo();
 
-        zoo.showAnimalBehavior(bird);
+        zoo.setAnimal(bird);
+        zoo.showAnimalBehavior();
 
-        zoo.showAnimalBehavior(elephant);
-
-        zoo.setAnimal();
+        zoo.setAnimal(elephant);
+        zoo.showAnimalBehavior();
     }
 }

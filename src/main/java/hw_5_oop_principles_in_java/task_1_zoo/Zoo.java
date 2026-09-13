@@ -1,12 +1,14 @@
 package hw_5_oop_principles_in_java.task_1_zoo;
 
 public class Zoo {
-    public void setAnimal() {
-        System.out.println("Животное добавлено в зоопарк");
+    private Animal animal;
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
 
-    public void showAnimalBehavior(Animal animal) {
-        animal.move();
-        animal.makeSound();
+    public void showAnimalBehavior() {
+        this.animal.move();
+        this.animal.makeSound();
     }
 }
