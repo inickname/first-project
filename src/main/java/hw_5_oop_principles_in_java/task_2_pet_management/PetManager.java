@@ -7,7 +7,8 @@ public class PetManager {
         this.pet = pet;
     }
 
-    public void handlePet(Pet pet) {
+    public void handlePet() {
+
         if (this.pet instanceof Feedable) {
             Feedable feedablePet = (Feedable) this.pet;
             feedablePet.feed();

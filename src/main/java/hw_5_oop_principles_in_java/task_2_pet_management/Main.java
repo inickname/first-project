@@ -10,9 +10,9 @@ public class Main {
         PetManager petManager = new PetManager();
 
         petManager.setPet(dog);
-        petManager.handlePet(dog);
+        petManager.handlePet();
 
         petManager.setPet(cat);
-        petManager.handlePet(cat);
+        petManager.handlePet();
     }
 }
