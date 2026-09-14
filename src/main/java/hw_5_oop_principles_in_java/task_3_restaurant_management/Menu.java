@@ -8,6 +8,6 @@ public class Menu {
     }
 
     public void printMenu(Dish dish) {
-        System.out.println(dish.getDescription());
+        System.out.println(this.dish.getDescription());
     }
 }

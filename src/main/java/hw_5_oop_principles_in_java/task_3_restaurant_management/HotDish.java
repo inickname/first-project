@@ -13,6 +13,6 @@ public class HotDish extends Dish {
 
     @Override
     public String getDescription() {
-        return "Описание с температурой: " + this.temperature + "°C";
+        return "Температура горячего блюда: " + this.temperature + "°C";
     }
 }

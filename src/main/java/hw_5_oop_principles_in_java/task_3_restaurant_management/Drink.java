@@ -13,6 +13,6 @@ public class Drink extends Dish {
 
     @Override
     public String getDescription() {
-        return "Описание с объёмом: " + this.volume + " мл";
+        return "Объём напитка: " + this.volume + " мл";
     }
 }
