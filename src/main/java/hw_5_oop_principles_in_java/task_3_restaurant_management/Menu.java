@@ -7,7 +7,7 @@ public class Menu {
         this.dish = dish;
     }
 
-    public void printMenu(Dish dish) {
+    public void printMenu() {
         System.out.println(this.dish.getDescription());
     }
 }

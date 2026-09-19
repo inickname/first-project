@@ -8,9 +8,9 @@ public class Main {
         Menu menu = new Menu();
 
         menu.addDish(hotDish);
-        menu.printMenu(hotDish);
+        menu.printMenu();
 
         menu.addDish(drink);
-        menu.printMenu(drink);
+        menu.printMenu();
     }
 }
